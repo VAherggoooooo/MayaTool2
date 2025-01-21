@@ -5,7 +5,7 @@ Drag and drop for Maya 2016+
 global proc toolInstall() {
     string $whatIs = `whatIs toolInstall`;
     string $path = `substring $whatIs 25 999`;
-    string $filename = `substitute "install.mel" $path "install.py"`;;
+    string $filename = `substitute "install.mel" $path "Data/install.py"`;;
     python("import imp;imp.load_source('_toolInstall', '"+$filename+"')");
 }
 

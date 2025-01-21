@@ -23,7 +23,7 @@ def _onMayaDropped():
         raise IOError('Cannot find ' + iconPath)
     
     p1 = os.path.dirname(__file__)
-    p2 = os.path.dirname(__file__) + r'/Function'
+    p2 = os.path.dirname(__file__) + r'/Code'
     command = '''\
 import os, sys
 if not os.path.exists(r'{path}'):
