@@ -1,15 +1,10 @@
 # -*- coding: utf-8 -*-
 import maya.cmds as cmds
-
-try:
-    import maya.OpenMayaUI as omui
-    from shiboken2 import wrapInstance
-except:
-    pass
-
+import main_ui
 
 def runInMaya():
-    print(u"Hello Maya")
+    # print(u"Hello Maya")
+    main_ui.show()
     pass
     
 def getWindow():
