@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 import maya.cmds as cmds
 import main_ui
+from imp import reload
+reload(main_ui) #一定要reload, 不然不重开maya就不刷新
 
 def runInMaya():
     # print(u"Hello Maya")
