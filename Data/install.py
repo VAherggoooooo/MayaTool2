@@ -38,13 +38,13 @@ myPath = r'{p2}'
 if myPath not in sys.path:
         sys.path.append(myPath) 
 
-import main_window
+import main_window_learn
 import pymel.core as pm
 for item in pm.lsUI(editors=True):
     if isinstance(item, pm.ui.ModelEditor):
         pm.modelEditor(item, edit=True, editorChanged="")
-reload(main_window)
-main_window.getWindow()
+reload(main_window_learn)
+main_window_learn.getWindow()
 
 '''
     command = command.format(path=srcPath, p1 = p1, p2 = p2)

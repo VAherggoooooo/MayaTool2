@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 import maya.cmds as cmds
-import main_ui
+import main_ui_learn
 from imp import reload
-reload(main_ui) #一定要reload, 不然不重开maya就不刷新
+reload(main_ui_learn) #一定要reload, 不然不重开maya就不刷新
 
 def runInMaya():
     # print(u"Hello Maya")
-    main_ui.show()
+    main_ui_learn.show()
     pass
     
 def getWindow():
